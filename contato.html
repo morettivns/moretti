@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  <link href="globe.png" rel="icon">
+  <link rel="stylesheet" href= "exemplo.css"> <!--Abre arquivos junto a página-->
+  
+
+  <header align="right"><h1 class="narrow">Contato</h1></header>    
+  <title>Contato</title>
+</head>
+
+<style>
+  a {color: gray;}
+  .azure {color: blue;}
+  .narrow{font-family: "PT Sans Narrow";}
+</style><!--Mudei a cor da letra dos links-->
+
+<body>
+  <h3></h3>
+
+<section> <!--Separa as sessões para deixar mais organizado-->
+<nav class="border"> <!--Nav é um sessão da página destinada a links-->
+  <ul align="center">
+    <li><a href="index.html" id="trab">Página inicial</a></li> <!--O "<a>" vai servir para tranformar o parágrafo em lista e o "<li>" transforma em lista-->
+    <li><a href="sobre-mim.html" id="sobr">Sobre</a></li>
+    <li><a href="portfolio.html" id="port">Portfólio</a></li>
+    <li><a href="novidades.html" id="novd">Novidades</a></li>
+    <br>
+
+    <ul>
+      <li>Meios de contato:</li>
+      <li><a href="https://www.instagram.com/morettivns/" id="inst">Instagram</a></li>
+      <li><a href="mailto: moretti.vini4@hotmail.com" id="emai">E-mail</a> </li>
+      <li><a href="https://wa.me/5521991639909?text=Ol%C3%A1+vin%C3%ADcius." id="what">Whatsapp</a></li>
+    </ul>
+  </ul>
+</nav>
+
+<article class="border">
+  <h3 align="center">Cadastro para contato</h3>
+  <form action="cadastro-contato.php" method="post" autocomplete="off">
+    <fieldset>
+      <legend>Informações pessoais:</legend>
+
+      <p><label for="nome_i">Nome:</label>
+      <input type="text" name="nome" id="nome_i" placeholder="Digite aqui" required></p>
+
+      <p><label for="sobrenome_i">Sobrenome:</label>
+      <input type="text" name="sobrenome" id="sobrenome_i" placeholder="Digite aqui" required></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações para contato:</legend>
+      <p><label for="email_i">E-mail:</label>
+      <input type="text" name="email" id="email_i" placeholder="Digite aqui" required></p>
+
+      <p><label for="whatsapp_i">Telefone para contato / Whatsapp</label>
+      <input type="text" name="whatsapp" id="whatsapp_i" placeholder="Digite aqui"></p>
+
+      <p><label for="dia_i">Dia para contato:</label>
+      <input type="date" name="data" id="dia_i">
+      </p>
+
+    </fieldset>
+    <p align="center"><input type="submit" value="Enviar">
+    <input type="reset" value="Limpar"></p>
+  </form>
+
+</article>
+
+<aside align="center">
+  <img src="globe.png">
+</aside>
+<aside align="center">
+  <img src="globe.png">
+</aside>
+<aside align="center">
+  <img src="globe.png">
+</aside>
+
+</section>
+</body>
